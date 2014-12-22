@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" xmlns:local="clr-namespace:Simon_Says"
+	x:Class="MainWindow"
+	Title="Simon Says MLG version"
+	Height="439"
+	Width="469"
+	MaxWidth="469"
+	MaxHeight="439"
+	MinWidth="469"
+	MinHeight="439"
+	WindowStyle="ToolWindow">
+	<Window.Resources>
+		<Storyboard
+			x:Key="flashBlue">
+			<DoubleAnimationUsingKeyFrames
+				Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+				Storyboard.TargetName="blueButton">
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.2"
+					Value="1.2" />
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.4"
+					Value="1" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames
+				Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+				Storyboard.TargetName="blueButton">
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.2"
+					Value="1.2" />
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.4"
+					Value="1" />
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard
+			x:Key="flashRed">
+			<DoubleAnimationUsingKeyFrames
+				Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+				Storyboard.TargetName="redButton">
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.2"
+					Value="1.2" />
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.4"
+					Value="1" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames
+				Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+				Storyboard.TargetName="redButton">
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.2"
+					Value="1.2" />
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.4"
+					Value="1" />
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard
+			x:Key="flashGreen">
+			<DoubleAnimationUsingKeyFrames
+				Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+				Storyboard.TargetName="greenButton">
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.2"
+					Value="1.2" />
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.4"
+					Value="1" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames
+				Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+				Storyboard.TargetName="greenButton">
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.2"
+					Value="1.2" />
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.4"
+					Value="1" />
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+		<Storyboard
+			x:Key="flashYellow">
+			<DoubleAnimationUsingKeyFrames
+				Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)"
+				Storyboard.TargetName="yellowButton">
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.2"
+					Value="1.2" />
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.4"
+					Value="1" />
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames
+				Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)"
+				Storyboard.TargetName="yellowButton">
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.2"
+					Value="1.2" />
+				<EasingDoubleKeyFrame
+					KeyTime="0:0:0.4"
+					Value="1" />
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+	<Grid
+		HorizontalAlignment="Left"
+		Width="677"
+		Background="Black">
+		<Button
+			x:Name="blueButton"
+			Content=""
+			Height="100"
+			Margin="110,154,467,0"
+			Style="{DynamicResource hexButton}"
+			VerticalAlignment="Top"
+			Width="Auto"
+			RenderTransformOrigin="0.5,0.5"
+			Grid.RowSpan="2">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform />
+					<SkewTransform />
+					<RotateTransform />
+					<TranslateTransform />
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+		<Button
+			x:Name="redButton"
+			Content=""
+			HorizontalAlignment="Left"
+			Height="100"
+			Margin="180,61,0,0"
+			Style="{DynamicResource hexButtonRed}"
+			VerticalAlignment="Top"
+			Width="100"
+			RenderTransformOrigin="0.5,0.5">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform />
+					<SkewTransform />
+					<RotateTransform />
+					<TranslateTransform />
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+		<Button
+			x:Name="greenButton"
+			Content=""
+			HorizontalAlignment="Left"
+			Height="100"
+			Margin="252.627,154,0,0"
+			Style="{DynamicResource hexButtonGreen}"
+			VerticalAlignment="Top"
+			Width="100"
+			Background="White"
+			RenderTransformOrigin="0.5,0.5"
+			Grid.RowSpan="2">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform />
+					<SkewTransform />
+					<RotateTransform />
+					<TranslateTransform />
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+		<Button
+			x:Name="yellowButton"
+			Content=""
+			HorizontalAlignment="Left"
+			Height="100"
+			Style="{DynamicResource hexButtonYellow}"
+			VerticalAlignment="Top"
+			Width="100"
+			RenderTransformOrigin="0.5,0.5"
+			Grid.Row="1"
+			Margin="180,25,0,0">
+			<Button.RenderTransform>
+				<TransformGroup>
+					<ScaleTransform />
+					<SkewTransform />
+					<RotateTransform />
+					<TranslateTransform />
+				</TransformGroup>
+			</Button.RenderTransform>
+		</Button>
+		<TextBlock
+			x:Name="scoreTextBlock"
+			HorizontalAlignment="Left"
+			TextWrapping="Wrap"
+			VerticalAlignment="Top"
+			Margin="351,0,0,0"
+			FontSize="72"
+			Height="93"
+			TextAlignment="Center"
+			Foreground="#FF898989"
+			Background="Black" />
+		<Button
+			x:Name="startButton"
+			Content="Start"
+			HorizontalAlignment="Left"
+			Style="{DynamicResource startButton}"
+			VerticalAlignment="Top"
+			Width="50"
+			Height="50"
+			Margin="10,10,0,0" />
+		<Label
+			Content="Level:"
+			HorizontalAlignment="Left"
+			VerticalAlignment="Top"
+			Foreground="White"
+			FontSize="16"
+			Grid.Row="1"
+			Margin="11,147,0,0" />
+		<TextBlock
+			x:Name="levelText"
+			HorizontalAlignment="Left"
+			TextWrapping="Wrap"
+			Text="TextBlock"
+			VerticalAlignment="Top"
+			Foreground="White"
+			Height="21"
+			Width="94"
+			FontSize="16"
+			Grid.Row="1"
+			Margin="65,152,0,0" />
+		<Grid.RowDefinitions>
+			<RowDefinition
+				Height="0.540540540540541*" />
+			<RowDefinition
+				Height="0.459459459459459*" />
+		</Grid.RowDefinitions>
+	</Grid>
+</Window>
