@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Simon_Says.Application" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Application.xaml.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Simon_Says.HexButton" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAACACAAAA=</HashCode>
+      <FileName>HexButton.xaml.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Simon_Says.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="1.75" Y="1.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAIAAgAgEAAAAAAAAAgABQAAAAACA=</HashCode>
+      <FileName>MainWindow.xaml.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Simon_Says.My.MySettings" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Module Name="Simon_Says.My.MyWpfExtension" Collapsed="true">
+    <Position X="7.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AiABAAAAABAAAEAAAAAAAAAAAAgBABAAABAAAAAAAAA=</HashCode>
+      <FileName>My Project\MyExtensions\MyWpfExtension.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="Simon_Says.My.MySettingsProperty" Collapsed="true">
+    <Position X="5.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="Simon_Says.My.Resources.Resources" Collapsed="true">
+    <Position X="5.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
